@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa's Astronomy Picture of the Day</title>
+    <link rel="stylesheet" href="NASA.css">
+</head>
+
+<body>
+    <h4>To obtain NASA's Astronomy Picture of the Day, click the button below.</h4>
+
+    <button type="button" id="buttonPicture">Get today's picture!</button><br><br>
+    <h4>See another day's picture!</h4>
+    <form>
+
+        Choose a date between June 16, 1995 and today:<br>
+
+        <input type="date" id="inputDate" placeholder="YYYY-MM-DD" min="1995-06-16" max="today" /><br><br>
+        <button type="button" id="buttonPicture2">Get picture of date...</button>
+
+    </form>
+    <div class="loader"></div>
+    <div id="apodDiv"></div>
+    <div id="errorDiv"></div>
+    <script src="NASA.js"></script>
+</body>
+
+</html>
